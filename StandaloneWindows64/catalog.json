@@ -1,9 +1,12 @@
 {
-  "schema": 1,
-  "platform": "StandaloneWindows64",
-  "unityVersion": "2022.3.61f1c1",
-  "bundle": "gamecontent-3874c493c886ce42faf4335e0cfd32ea.bundle",
-  "hash": "3874c493c886ce42faf4335e0cfd32ea",
-  "crc": 3857061396,
-  "playerAsset": "Assets/GameContent/Prefabs/Player.prefab"
+    "schema": 1,
+    "platform": "StandaloneWindows64",
+    "unityVersion": "2022.3.61f1c1",
+    "bundle": "gamecontent-7f0cc095e864bbd751a343d4a42e4c19.bundle",
+    "hash": "7f0cc095e864bbd751a343d4a42e4c19",
+    "crc": 1049109721,
+    "contentVersion": 2,
+    "sizeBytes": 60811,
+    "releaseNotes": "新增 StartScene 开始界面，可输入种子开始游戏或退出。\n新增 6×6～9×9 单大陆地图、棕色陆地和蓝色水面。\n新增地图生成进度、顶部种子、30 秒倒计时和游戏结束面板。\n新增鼠标人物转向与右键拖动环绕相机。\n新增启动热更新内容展示和下载进度。\n",
+    "playerAsset": "Assets/GameContent/Prefabs/Player.prefab"
 }
