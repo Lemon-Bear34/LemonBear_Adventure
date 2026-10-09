@@ -1,0 +1,19 @@
+local Vector3 = CS.UnityEngine.Vector3
+local M = {}
+
+function M.create(camera, target)
+    local state = { camera = camera, target = target,
+        offset = Vector3(0, 6, -8), look_height = Vector3(0, 0.6, 0), damping = 8 }
+    camera.transform.position = target.position + state.offset
+    camera.transform:LookAt(target.position + state.look_height)
+    return state
+end
+
+function M.update(state, dt)
+    local desired = state.target.position + state.offset
+    state.camera.transform.position = Vector3.Lerp(state.camera.transform.position,
+        desired, 1 - math.exp(-state.damping * dt))
+    state.camera.transform:LookAt(state.target.position + state.look_height)
+end
+
+return M

@@ -1,0 +1,24 @@
+local player = require('player')
+local camera = require('camera')
+local Input = CS.UnityEngine.Input
+local KeyCode = CS.UnityEngine.KeyCode
+local M = {}
+local player_state, camera_state
+
+function M.initialize(object, follow_camera)
+    player_state = player.create(object)
+    camera_state = camera.create(follow_camera, object.transform)
+end
+
+function M.update(dt)
+    player.update(player_state, camera_state.camera, dt,
+        Input.GetAxisRaw('Horizontal'), Input.GetAxisRaw('Vertical'),
+        Input.GetKey(KeyCode.LeftShift) or Input.GetKey(KeyCode.RightShift),
+        Input.GetKeyDown(KeyCode.Space))
+end
+
+function M.late_update(dt)
+    camera.update(camera_state, dt)
+end
+
+return M

@@ -1,0 +1,9 @@
+{
+    "schema": 1,
+    "platform": "StandaloneWindows64",
+    "unityVersion": "2022.3.61f1c1",
+    "bundle": "gamecontent-3874c493c886ce42faf4335e0cfd32ea.bundle",
+    "hash": "3874c493c886ce42faf4335e0cfd32ea",
+    "crc": 3857061396,
+    "playerAsset": "Assets/GameContent/Prefabs/Player.prefab"
+}

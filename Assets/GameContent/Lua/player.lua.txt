@@ -1,0 +1,43 @@
+local U = CS.UnityEngine
+local Vector3 = U.Vector3
+local Quaternion = U.Quaternion
+local M = {}
+
+function M.create(object)
+    return { transform = object.transform,
+        controller = object:GetComponent(typeof(U.CharacterController)),
+        speed = 5, run_speed = 8, turn_speed = 12,
+        gravity = -20, jump_height = 1.5, vertical_speed = 0,
+        spawn = Vector3(0, 1.1, 0) }
+end
+
+function M.update(state, camera, dt, horizontal, vertical, running, jump)
+    dt = math.min(dt, 0.05)
+    local forward = camera.transform.forward
+    local right = camera.transform.right
+    forward.y = 0
+    right.y = 0
+    forward = forward.normalized
+    right = right.normalized
+    local direction = forward * vertical + right * horizontal
+    if direction.sqrMagnitude > 1 then direction = direction.normalized end
+    if direction.sqrMagnitude > 0.001 then
+        state.transform.rotation = Quaternion.Slerp(state.transform.rotation,
+            Quaternion.LookRotation(direction), 1 - math.exp(-state.turn_speed * dt))
+    end
+    if state.controller.isGrounded then
+        if state.vertical_speed < 0 then state.vertical_speed = -2 end
+        if jump then state.vertical_speed = math.sqrt(-2 * state.gravity * state.jump_height) end
+    end
+    state.vertical_speed = state.vertical_speed + state.gravity * dt
+    local speed = running and state.run_speed or state.speed
+    state.controller:Move((direction * speed + Vector3.up * state.vertical_speed) * dt)
+    if state.transform.position.y < -10 then
+        state.controller.enabled = false
+        state.transform.position = state.spawn
+        state.controller.enabled = true
+        state.vertical_speed = 0
+    end
+end
+
+return M
