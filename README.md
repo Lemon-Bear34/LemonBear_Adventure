@@ -1,3 +1,3 @@
 # LemonBear runtime resources
 
-Per-platform Unity AssetBundles and catalogs. Keep hash-named bundles immutable. Current contentVersion 2 includes Lua menu/map/game flow, mouse turning and camera orbit, Player and land/water tiles. Requires the client with StartScene, MapScene and GameSession bridges. Built with Unity 2022.3.61f1c1. Publish with Tools/Publish-AssetBundles.ps1; edit Assets/GameContent/release-notes.txt to set the update panel notes.
+Content ABI 3: preparation room, persistent backpack/warehouse, 30-40 voxel maps with 1-3 continents, terraced hills/stairs, suspension bridges, reachable treasure chests, and extraction settlement. Requires a rebuilt client with PreparationScene and the ABI 3 C# bridges. Per-platform catalogs include sizeBytes and releaseNotes for confirmation before downloading. Keep hash-named historical bundles immutable. Unity 2022.3.61f1c1, Windows x64.
