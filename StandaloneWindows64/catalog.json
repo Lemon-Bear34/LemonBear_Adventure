@@ -2,11 +2,11 @@
     "schema": 1,
     "platform": "StandaloneWindows64",
     "unityVersion": "2022.3.61f1c1",
-    "bundle": "gamecontent-e6ec98d07490c0e2aa0e4e8194339ea9.bundle",
-    "hash": "e6ec98d07490c0e2aa0e4e8194339ea9",
-    "crc": 3609705421,
-    "contentVersion": 3,
-    "sizeBytes": 65588,
-    "releaseNotes": "更新前显示内容、下载大小和确认按钮，更新后显示完成提示。\n新增准备室、R 仓库、B 背包、物品转移与本地存档。\n地图扩大至 240～250 格，每块大陆至少 70% 是相邻陆地同高的平原。\n保留 1～3 块大陆、立方体山丘、楼梯和山顶吊桥。\n在可到达地块生成 3～5 个宝箱，按 E 搜索并收取战利品。\n探索结束后进行撤离结算，可将背包物品转入仓库。\n",
+    "bundle": "gamecontent-598c529c65b76a8b8ff7bd898ddd5aa2.bundle",
+    "hash": "598c529c65b76a8b8ff7bd898ddd5aa2",
+    "crc": 2633657289,
+    "contentVersion": 4,
+    "sizeBytes": 87412,
+    "releaseNotes": "更新前显示内容、下载大小和确认按钮，更新后显示完成提示。\n新增准备室、R 仓库、B 背包、物品转移与本地存档。\n界面改为蓝白配色，地图 240～250 格，移除山丘，所有陆地同高。\n1～3 块大陆间保留至少 5 格水面，以吊桥连接；新增草地和石头地。\n每图生成 5～7 座建筑，建筑间至少 5 格：小房子、仓库、医疗站、信号塔、温室。\n宝箱逐格搜索，品质越高搜索越久，点击已发现格子或收取按钮领取资源。\n探索结束后进行撤离结算，可将背包物品转入仓库。\n",
     "playerAsset": "Assets/GameContent/Prefabs/Player.prefab"
 }
