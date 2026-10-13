@@ -2,11 +2,11 @@
     "schema": 1,
     "platform": "StandaloneWindows64",
     "unityVersion": "2022.3.61f1c1",
-    "bundle": "gamecontent-ed1f8cd9f31a20244bd277e8fc687414.bundle",
-    "hash": "ed1f8cd9f31a20244bd277e8fc687414",
-    "crc": 2452482439,
+    "bundle": "gamecontent-e6ec98d07490c0e2aa0e4e8194339ea9.bundle",
+    "hash": "e6ec98d07490c0e2aa0e4e8194339ea9",
+    "crc": 3609705421,
     "contentVersion": 3,
-    "sizeBytes": 65287,
-    "releaseNotes": "更新前显示内容、下载大小和确认按钮，更新后显示完成提示。\n新增准备室、R 仓库、B 背包、物品转移与本地存档。\n地图扩大至 30～40 格，包含 1～3 块大陆、立方体山丘、楼梯和山顶吊桥。\n在可到达地块生成 3～5 个宝箱，按 E 搜索并收取战利品。\n探索结束后进行撤离结算，可将背包物品转入仓库。\n",
+    "sizeBytes": 65588,
+    "releaseNotes": "更新前显示内容、下载大小和确认按钮，更新后显示完成提示。\n新增准备室、R 仓库、B 背包、物品转移与本地存档。\n地图扩大至 240～250 格，每块大陆至少 70% 是相邻陆地同高的平原。\n保留 1～3 块大陆、立方体山丘、楼梯和山顶吊桥。\n在可到达地块生成 3～5 个宝箱，按 E 搜索并收取战利品。\n探索结束后进行撤离结算，可将背包物品转入仓库。\n",
     "playerAsset": "Assets/GameContent/Prefabs/Player.prefab"
 }

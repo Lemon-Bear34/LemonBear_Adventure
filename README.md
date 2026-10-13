@@ -1,3 +1,3 @@
 # LemonBear runtime resources
 
-Content ABI 3: preparation room, persistent backpack/warehouse, 30-40 voxel maps with 1-3 continents, terraced hills/stairs, suspension bridges, reachable treasure chests, and extraction settlement. Requires a rebuilt client with PreparationScene and the ABI 3 C# bridges. Per-platform catalogs include sizeBytes and releaseNotes for confirmation before downloading. Keep hash-named historical bundles immutable. Unity 2022.3.61f1c1, Windows x64.
+ABI 3; map algorithm 3: 240-250 cells per side, 1-3 continents, at least 70% same-height plains on each continent. Retains hills, stairs, bridges and reachable loot. Rebuild the client for chunked exposed voxel surfaces and merged terrain colliders; Lua and resource catalogs update through AssetBundles. Keep hash-named bundles immutable. Unity 2022.3.61f1c1 / Windows x64.
